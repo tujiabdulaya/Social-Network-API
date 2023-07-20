@@ -58,3 +58,6 @@ const ReactionSchema = new Schema({
       _id: false
     }
   );
+  const Thought = model('Thought',thoughtSchema)
+
+module.exports= {Thought}
