@@ -1,4 +1,5 @@
-const {Thought} = required('../models')
+const {Thought} = require('../models /Thought')
+const {User} = require("../models /User")
 const thoughtController = {
     getAllThought(req, res) {
       Thought.find({})
@@ -67,3 +68,5 @@ const thoughtController = {
         });
     },
   }
+
+  module.exports = thoughtController
